@@ -16,5 +16,15 @@ namespace ProjectCS
             var myJsonString = File.ReadAllText(@"../../../Data/data.json");
             var myJsonObject = JsonConvert.DeserializeObject<List<Client>>(myJsonString);
         }
+
+        public static T DeserializeFromJson<T>(string data)
+        {
+            return JsonConvert.DeserializeObject<T>(data);
+        }
+
+        public static string SerializeToJson<T>(T data)
+        {
+            return JsonConvert.SerializeObject(data);
+        }
     }
 }

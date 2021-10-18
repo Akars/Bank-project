@@ -1,8 +1,11 @@
-﻿namespace ProjectCS
+﻿using System.Collections.Generic;
+using System.IO;
+
+namespace ProjectCS
 {
     public class ClientJsonAccess : IClientDataAccess
     {
-        public Client[] GetAll()
+        public List<Client> GetAll()
         {
             throw new System.NotImplementedException();
         }
@@ -17,9 +20,14 @@
             throw new System.NotImplementedException();
         }
 
-        public Client GetClient(int guid)
+        public Client GetClient(string guid)
         {
-            throw new System.NotImplementedException();
+            var myJsonString = File.ReadAllText(@"../../../Data/data.json");
+            var jsObject = JsonHelper.DeserializeFromJson<List<Client>>(myJsonString);
+
+            Client c = jsObject.Find(client => client.id == guid);
+            
+            return c;
         }
 
         public void UpdateClient(Client c)

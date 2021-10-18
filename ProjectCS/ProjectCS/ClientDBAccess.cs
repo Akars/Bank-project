@@ -1,16 +1,17 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ProjectCS
 {
     public class ClientDBAccess : IClientDataAccess
     {
-        public Client GetClient(int guid)
+        public Client GetClient(string guid)
         {
             
             throw new System.NotImplementedException();
         }
 
-        public Client[] GetAll()
+        public List<Client> GetAll()
         {
             throw new System.NotImplementedException();
         }

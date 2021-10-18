@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wiwi9\\RiderProjects\\ProjectCS\\ProjectCS\\ProjectCS.csproj",
+      "projectUniqueName": "C:\\Users\\wiwi9\\RiderProjects\\Bank-project\\ProjectCS\\ProjectCS\\ProjectCS.csproj",
       "projectName": "ProjectCS",
-      "projectPath": "C:\\Users\\wiwi9\\RiderProjects\\ProjectCS\\ProjectCS\\ProjectCS.csproj",
+      "projectPath": "C:\\Users\\wiwi9\\RiderProjects\\Bank-project\\ProjectCS\\ProjectCS\\ProjectCS.csproj",
       "packagesPath": "C:\\Users\\wiwi9\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wiwi9\\RiderProjects\\ProjectCS\\ProjectCS\\obj\\",
+      "outputPath": "C:\\Users\\wiwi9\\RiderProjects\\Bank-project\\ProjectCS\\ProjectCS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wiwi9\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -9,10 +9,12 @@ namespace ProjectCS
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Client c = new Client();
-            JsonHelper json = new JsonHelper();
-            
-            json.Deserialize();
+            int guid = Guid.NewGuid().GetHashCode();
+            Console.WriteLine(guid);
+
+            var jsonAccess = new ClientJsonAccess();
+            Console.WriteLine(jsonAccess.GetClient("293e4d46-5dff-4645-bd4c-b5365548b567"));
+            Console.WriteLine(jsonAccess.GetClient("293e4d46-5dff-4645-bd4c-b5365548b567").firstname);
         }
     }
 }

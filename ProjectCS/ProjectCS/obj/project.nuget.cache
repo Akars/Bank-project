@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6TNdaLyHfItxa5czoifPIYYOXhSy23XQxWXxiVz0OBX3OP1kIGSAl0i5cghPanegvGxA4Cf0a5mwSeamuKAzJQ==",
+  "dgSpecHash": "KqbAfpqxT1MO7A68Cou7MDDYcfNnG+TcHKvYXUrKObWRgYXz95WIC4GU1VaBbu64SpjTYY38R9LazVnyW0iRJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wiwi9\\RiderProjects\\ProjectCS\\ProjectCS\\ProjectCS.csproj",
+  "projectFilePath": "C:\\Users\\wiwi9\\RiderProjects\\Bank-project\\ProjectCS\\ProjectCS\\ProjectCS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wiwi9\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
