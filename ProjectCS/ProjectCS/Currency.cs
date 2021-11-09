@@ -2,7 +2,7 @@
 {
     public class Currency
     {
-        private string currency { get; set; }
-        private double amount { get; set; }
+        public string currency { get; set; }
+        public int amount { get; set; }
     }
-}
+}   

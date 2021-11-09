@@ -6,7 +6,21 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.123" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
+      <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.13" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.0.7" />
+      <PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="AtmDB.db" />
+      <Content Include="AtmDB.db">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

@@ -5,7 +5,7 @@ namespace ProjectCS
 {
     public class Client
     {
-        public string id { get; set; }
+        public string guid { get; set; }
         public string firstname { get; set; }
         public string lastname { get; set; }
         public int pin { get; set; }

@@ -8,13 +8,19 @@ namespace ProjectCS
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            int guid = Guid.NewGuid().GetHashCode();
-            Console.WriteLine(guid);
+            // Console.WriteLine("Hello World!");
+            // int guid = Guid.NewGuid().GetHashCode();
+            // Console.WriteLine(guid);
+            //
+            // var jsonAccess = new ClientJsonAccess();
+            // Console.WriteLine(jsonAccess.GetClient("293e4d46-5dff-4645-bd4c-b5365548b567"));
+            // Console.WriteLine(jsonAccess.GetClient("293e4d46-5dff-4645-bd4c-b5365548b567").firstname);
+            // jsonAccess.GetAll();
+            //
 
-            var jsonAccess = new ClientJsonAccess();
-            Console.WriteLine(jsonAccess.GetClient("293e4d46-5dff-4645-bd4c-b5365548b567"));
-            Console.WriteLine(jsonAccess.GetClient("293e4d46-5dff-4645-bd4c-b5365548b567").firstname);
+            var dbAccess = new ClientDBAccess();
+            Console.WriteLine(dbAccess.GetAll()[0].guid);
+            Console.WriteLine(dbAccess.GetAll()[0].currencies.Count);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace ProjectCS
@@ -7,7 +8,18 @@ namespace ProjectCS
     {
         public List<Client> GetAll()
         {
-            throw new System.NotImplementedException();
+            var myJsonString = File.ReadAllText(@"../../../Data/data.json");
+            var jsObject = JsonHelper.DeserializeFromJson<List<Client>>(myJsonString);
+            Console.WriteLine("---------------------------------------------------------------");
+            foreach (var client in jsObject)
+            {
+                Console.WriteLine("Client GUID: " + client.guid);
+                Console.WriteLine("Nom:  " + client.firstname + " " + client.lastname);
+                Console.WriteLine("Main currency: " + client.currency);
+                Console.WriteLine("---------------------------------------------------------------");
+            }
+
+            return jsObject;
         }
 
         public Client CreateUser()
@@ -25,14 +37,16 @@ namespace ProjectCS
             var myJsonString = File.ReadAllText(@"../../../Data/data.json");
             var jsObject = JsonHelper.DeserializeFromJson<List<Client>>(myJsonString);
 
-            Client c = jsObject.Find(client => client.id == guid);
+            Client c = jsObject.Find(client => client.guid == guid);
             
             return c;
         }
 
         public void UpdateClient(Client c)
         {
-            throw new System.NotImplementedException();
+            var myJsonString = File.ReadAllText(@"../../../Data/data.json");
+            var jsObject = JsonHelper.DeserializeFromJson<List<Client>>(myJsonString);
+            
         }
     }
 }
