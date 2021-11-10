@@ -27,7 +27,7 @@ namespace ProjectCS
             throw new System.NotImplementedException();
         }
 
-        public void DeleteClient(int guid)
+        public void DeleteClient(string guid)
         {
             throw new System.NotImplementedException();
         }

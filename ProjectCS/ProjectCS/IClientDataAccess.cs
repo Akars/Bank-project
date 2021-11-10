@@ -8,6 +8,6 @@ namespace ProjectCS
         Client CreateUser(); //Create a Client
         Client GetClient(string guid); //Get the client with guid
         void UpdateClient(Client c); //Update client
-        void DeleteClient(int guid); //Delete the client with guid
+        void DeleteClient(string guid); //Delete the client with guid
     }
 }

@@ -3,7 +3,7 @@
     "guid": "293e4d46-5dff-4645-bd4c-b5365548b567",
     "firstname": "William",
     "lastname": "LI",
-    "pin": 123456,
+    "pin": 1234,
     "currencies": [
       {
         "currency": "USD",
@@ -20,7 +20,7 @@
     "guid": "07125C6D-56F5-4C12-AA02-5C8E3B5A8D81",
     "firstname": "Amaury",
     "lastname": "LIN",
-    "pin": 123456,
+    "pin": 1234,
     "currencies": [
       {
         "currency": "USD",

@@ -11,7 +11,15 @@ namespace ProjectCS
         public int pin { get; set; }
         public List<Currency> currencies { get; set; }
         public string currency { get; set; }
-        
-        
+
+        public Client(string _firstname, string _lastname)
+        {
+            firstname = _firstname;
+            lastname = _lastname;
+            guid = Guid.NewGuid().ToString();
+            pin = new Random().Next(1000, 9999);
+            currencies = new List<Currency>();
+            currency = "EUR";
+        }
     }
 }
