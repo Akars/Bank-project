@@ -6,7 +6,6 @@ namespace ProjectCS
     {
         public static void PrintWelcomeMsg()
         {
-            Console.WriteLine("Hello welcome to the bank !");
             Console.WriteLine("1: If you're an Admin");
             Console.WriteLine("2: If you're a Client");
             Console.WriteLine("0: Quit");
@@ -14,7 +13,6 @@ namespace ProjectCS
         
         public static void AdminMenu()
         {
-            Console.WriteLine("Hello admin.");
             Console.WriteLine("1: Create Client");
             Console.WriteLine("2: Manage a Client");
             Console.WriteLine("3: View list Client");
@@ -23,7 +21,6 @@ namespace ProjectCS
 
         public static void ClientMenu()
         {
-            Console.WriteLine("Hello .");
             Console.WriteLine("1: View GUID and credentials");
             Console.WriteLine("2: View total amount");
             Console.WriteLine("3: Retrieve money");
@@ -33,6 +30,14 @@ namespace ProjectCS
             Console.WriteLine("0: Quit");
         }
         
-        
+        public static void PrintManage()
+        {
+            Console.WriteLine("1: UnBlock");
+            Console.WriteLine("2: Block");
+            Console.WriteLine("3: Change pin");
+            Console.WriteLine("4: Reset tries");
+            Console.WriteLine("5: Delete client");
+            Console.WriteLine("0: Quit");
+        }
     }
 }

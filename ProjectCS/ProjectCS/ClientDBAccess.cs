@@ -115,16 +115,21 @@ namespace ProjectCS
         public void UpdateClient(Client c)
         {
             SQLiteConnection cnn = LoadConnection();
-            cnn.Execute("update client set firstname=" 
-                        + "'" + c.firstname 
-                        + "', lastname='" + c.lastname 
-                        + "', pin='" + c.pin 
-                        +"', currency='" + c.currency 
+            cnn.Execute("update client set firstname="
+                        + "'" + c.firstname
+                        + "', lastname='" + c.lastname
+                        + "', pin='" + c.pin
+                        + "', currency='" + c.currency
+                        + "', isBlocked='" + c.isBlocked
+                        + "', codeTry='" + c.codeTry
                         + "' where guid = " + "\"" + c.guid + "\""
                         );
             foreach (var money in c.currencies)
             {
-                cnn.Execute("update currencies set currency=" + "'" + money.currency + "', amount='" + "' where guid = " + "\"" + c.guid + "\"");
+                cnn.Execute("update currencies set "
+                            + "amount='" + money.amount
+                            + "' where guid = " + "\"" + c.guid + "\""
+                            + " and currency = " + "\"" + money.currency + "\"");
             }
         }
 

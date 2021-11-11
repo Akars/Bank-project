@@ -12,7 +12,7 @@ namespace ProjectCS
         public int pin { get; set; }
         public List<Currency> currencies { get; set; }
         public string currency { get; set; }
-        public bool isBlocked { get; set; }
+        public int isBlocked { get; set; }
         public int codeTry { get; set; }
 
         public string ToStringPreferredCurrency(string toCurrency)
@@ -76,7 +76,7 @@ namespace ProjectCS
             codeTry--;
             if (codeTry == 0)
             {
-                isBlocked = true;
+                isBlocked = 1;
             }
             return false;
         }

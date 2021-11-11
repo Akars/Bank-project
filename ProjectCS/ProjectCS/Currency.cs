@@ -17,7 +17,7 @@ namespace ProjectCS
             if (retrievedAmount <= amount)
             {
                 amount -= retrievedAmount;
-                Console.WriteLine("New sold: " + amount);
+                Console.WriteLine("New sold: " + amount + " " + currency);
                 return true;
             }
             else
@@ -30,6 +30,7 @@ namespace ProjectCS
         public void AddMoney(double addedMoney)
         {
             amount += addedMoney;
+            Console.WriteLine("New sold: " + amount + " " + currency);
         }
     }
 }   
