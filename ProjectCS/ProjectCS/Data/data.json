@@ -7,30 +7,49 @@
     "currencies": [
       {
         "currency": "USD",
-        "amount": 12
+        "amount": 10.0
       },
       {
         "currency": "EUR",
-        "amount": 80
+        "amount": 80.0
       }
     ],
-    "currency": "EUR"
+    "currency": "EUR",
+    "isBlocked": 0,
+    "codeTry": 3
   },
   {
-    "guid": "07125C6D-56F5-4C12-AA02-5C8E3B5A8D81",
+    "guid": "8b574176-5f2f-433e-8fbe-da2495dc56f5",
     "firstname": "Amaury",
     "lastname": "LIN",
-    "pin": 1234,
+    "pin": 2345,
     "currencies": [
       {
         "currency": "USD",
-        "amount": 12
+        "amount": 30.0
       },
       {
         "currency": "EUR",
-        "amount": 80
+        "amount": 15.0
       }
     ],
-    "currency": "EUR"
+    "currency": "EUR",
+    "isBlocked": 0,
+    "codeTry": 3
+  },
+  {
+    "guid": "6c858879-9e22-4847-9b87-0b532ba55193",
+    "firstname": "Titouan",
+    "lastname": "LELLOUCHE",
+    "pin": 1345,
+    "currencies": [
+      {
+        "currency": "EUR",
+        "amount": 20.0
+      }
+    ],
+    "currency": "EUR",
+    "isBlocked": 1,
+    "codeTry": 0
   }
 ]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hQgSaq4dVnvdqZYEisirEJzL1VzVvgiNzr/nVbDu6+UiIoCzU/boeubMhD+PNefbm20bryZHImGvKVx8VHVl+w==",
+  "dgSpecHash": "O5ad1NpXZQV3Qh8xG/Godh54Q3QyAfD5o9cINNsXLcKyduyko15O09Q9zScITdX1QvdSLQBGb04mrsXPenavjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wiwi9\\RiderProjects\\Bank-project\\ProjectCS\\ProjectCS\\ProjectCS.csproj",
+  "projectFilePath": "C:\\Users\\wiwi9\\Desktop\\Bank-project\\ProjectCS\\ProjectCS\\ProjectCS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wiwi9\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\wiwi9\\.nuget\\packages\\microsoft.data.sqlite\\6.0.0\\microsoft.data.sqlite.6.0.0.nupkg.sha512",
