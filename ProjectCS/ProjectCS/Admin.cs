@@ -9,7 +9,7 @@ namespace ProjectCS
 
         public bool AdminCredential(string username, string password)
         {
-            return username.Equals(this.username) && password.Equals(this.password);
+            return username == this.username && password == this.password;
         }
     }
 }

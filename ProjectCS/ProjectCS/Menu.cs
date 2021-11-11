@@ -4,7 +4,7 @@ namespace ProjectCS
 {
     public class Menu
     {
-        public void PrintWelcomeMsg()
+        public static void PrintWelcomeMsg()
         {
             Console.WriteLine("Hello welcome to the bank !");
             Console.WriteLine("1: If you're an Admin");
@@ -12,7 +12,7 @@ namespace ProjectCS
             Console.WriteLine("0: Quit");
         }
         
-        public void AdminMenu()
+        public static void AdminMenu()
         {
             Console.WriteLine("Hello admin.");
             Console.WriteLine("1: Create Client");
@@ -21,7 +21,7 @@ namespace ProjectCS
             Console.WriteLine("0: Quit");
         }
 
-        public void ClientMenu()
+        public static void ClientMenu()
         {
             Console.WriteLine("Hello .");
             Console.WriteLine("1: View GUID and credentials");

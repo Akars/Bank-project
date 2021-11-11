@@ -46,7 +46,13 @@ namespace ProjectCS
             string firstname = Console.ReadLine();
             Console.WriteLine("Lastname: ");
             string lastname = Console.ReadLine();
-            Client client = new Client(firstname, lastname);
+            Client client = new Client();
+            client.firstname = firstname;
+            client.lastname = lastname;
+            client.guid = Guid.NewGuid().ToString();
+            client.pin = new Random().Next(1000, 9999);
+            client.currencies = new List<Currency>();
+            client.currency = "EUR";
             Console.WriteLine("Welcome " + firstname);
             Console.WriteLine("Your ID is : " + client.guid);
             Console.WriteLine("Your pin will be displayed once keep it secret : " + client.pin);
@@ -60,22 +66,21 @@ namespace ProjectCS
                 while (true)
                 {
                     Console.WriteLine("Currency:");
-                    string currency = Console.ReadLine();
-                    if (!App.valideCurrency(currency))
-                    {
-                        Console.WriteLine("Wrong currency");
-                        continue;
-                    }
+                    string currency = App.ReadCurrency();
+                    
                     Console.WriteLine("Amount:");
-                    int amount = Console.Read();
+                    int amount = int.Parse(Console.ReadLine());
                     while (amount < 0)
                     {
                         Console.WriteLine("Wrong input");
-                        amount = Console.Read();
+                        amount = int.Parse(Console.ReadLine());
                     }
                     
                     Console.WriteLine(amount + " " + currency + " is added to your account.");
-                    client.currencies[client.currencies.Count] = new Currency(currency, amount);
+                    var money = new Currency();
+                    money.amount = amount;
+                    money.currency = currency;
+                    client.currencies.Add(money);
                     
                     Console.WriteLine("Do you want to continue ? (y/n)");
                     choice = App.Read();
